@@ -4,8 +4,8 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "prisma db push && node dist/index.js",
-    "postinstall": "prisma generate",
+    "start": "npx prisma db push && node dist/index.js",
+    "postinstall": "npx prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:push": "prisma db push",
     "prisma:seed": "tsx prisma/seed.ts"
